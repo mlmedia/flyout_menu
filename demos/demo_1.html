@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery flyout menu plugin - DEMO #1</title>
+
+	<!-- css -->
+	<link type="text/css" media="all" href="../css/main.css" rel="stylesheet" />
+	<link type="text/css" media="all" href="../css/flyout_menu.css" rel="stylesheet" />
+
+	<!-- js -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/flyout_menu.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="whitebox">
+			<div id="breadcrumbs">
+				&lt;&lt;&nbsp;<a href="../index.html" title="Accordion DEMO index">DEMO index</a>
+			</div>
+			<h1>Flyout menu plugin - DEMO #1</h1>
+			<p>
+				Below is a demo of the jQuery infinite-scrolling flyout menu plugin from the public GitHub project found here: <a href="https://github.com/mlmedia/flyout_menu" title="jQuery Flyout menu plugin on GitHub" target="_blank">https://github.com/mlmedia/flyout_menu</a>.
+			</p>
+			<p>
+				The combined CSS for all of the demos can be viewed here: <a href="../css/flyout_menu.css" title="Flyout menu demo">http://demo.dockstreetmedia.com/flyout_menu/css/flyout_menu.css</a>
+			</p>
+			<hr />
+			<div id="nav">
+				<ul class="primary_menu list-inline clearfix">
+					<li class="link_products_item">
+						<ul class="menu" style="">
+							<li class="first last expanded"><a href="/products" title="Products" class="">Products</a>
+								<ul class="menu" style="display: none;">
+									<li class="first leaf"><a href="/products/product-index" title="Product Index">Product Index</a></li>
+									<li class="leaf"><a href="/products/type" title="Type">Type</a></li>
+									<li class="leaf"><a href="/products/markets" title="Market">Market</a></li>
+									<li class="last leaf"><a href="/products/greenpoint" title="Green Point Products">Green Point Products</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="link_resources_item">
+						<ul class="menu" style="">
+							<li class="first last expanded"><a href="/resources/media" title="Resources" class="">Resources</a>
+								<ul class="menu" style="display: none;">
+									<li class="first leaf"><a href="/blog">Blog</a></li>
+									<li class="leaf"><a href="/resources/media" title="Media Library">Media Library</a></li>
+									<li class="leaf"><a href="/resources/industry-links" title="Industry Links">Industry Links</a></li>
+									<li class="leaf"><a href="/resources/news_events" title="News &amp; Events">News &amp; Events</a></li>
+									<li class="last leaf"><a href="/resources/stewardship" title="Product Stewardship">Product Stewardship</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="link_about_item">
+						<ul class="menu">
+							<li class="first last expanded"><a href="/about/profile" title="About" class="active">About</a>
+								<ul class="menu" style="display: none;">
+									<li class="first leaf"><a href="/about/profile" class="active">Company Profile</a></li>
+									<li class="leaf"><a href="/about/company-history" title="Company History">Company History</a></li>
+									<li class="leaf"><a href="/about/locations" title="Locations">Locations</a></li>
+									<li class="leaf"><a href="/about/hr" title="Human Resources">Human Resources</a></li>
+									<li class="last leaf"><a href="/about/careers" title="Careers">Careers</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="link_contact_item">
+						<ul class="menu">
+							<li class="first last expanded"><a href="/contact-us">Contact Us</a>
+								<ul class="menu" style="display: none;">
+									<li class="first leaf"><a href="/contact-us">Send a Message</a></li>
+									<li class="last leaf"><a href="/welcome-inventors-idea-people">Submit an Idea</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="link_where_item">
+						<ul class="menu">
+							<li class="first"><a href="/where-to-buy">Where to Buy</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				/* define $ as jQuery just in case */
+				( function( $ )
+				{
+					/* doc ready */
+					$( function( )
+					{
+						/* init the plugin */
+						$( '#flyout_menu_1' ).flyout_menu( );
+					});
+				})( jQuery );
+			</script>
+			<hr />
+			<p>
+				<i>All public domain images are courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons" target="_blank">Wikimedia Commons</a>.</i>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
