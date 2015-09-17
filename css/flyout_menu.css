@@ -9,22 +9,21 @@
 /**
  * flyout menu demo #2
  */
-
 #flyout_menu_2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	background-color: #cccccc;
-}
-#flyout_menu_2 .row {
-	margin: 0;
+	position:relative;
+    height:auto;
+    display:block;
+    overflow:hidden;
+    clear:both;
+    z-index:1001;
 }
 #flyout_menu_2 > ul.menu {
-	margin-left: 300px;
-	margin-bottom: 0 !important;
+    display:block;
+	width:100%;
+	background-color: #cccccc;
+    overflow:hidden;
 }
-#flyout_menu_2 > ul.menu li {
+#flyout_menu_2 > ul.menu > li {
 	padding: 0 !important;
 	text-align: center;
 	position: relative;
@@ -33,9 +32,9 @@
 	display: block !important;
 	float: left !important;
 }
-#flyout_menu_2 > ul.menu li a {
+#flyout_menu_2 > ul.menu > li > a {
 	display: block;
-	padding: 10px 0 !important;
+	padding:10px !important;
 	float: none;
 	clear: both;
 	text-align: center;
@@ -44,19 +43,17 @@
 
 #flyout_menu_2 > ul.menu > li > ul.menu {
 	padding-left: 0 !important;
-}
-#flyout_menu_2 > ul.menu > li > ul.menu {
 	margin-bottom: 0 !important;
 }
-#flyout_menu_2 > ul.menu > li > ul.menu li {
+#flyout_menu_2 > ul.menu > li > ul.menu > li {
 	margin: 0 !important;
 	list-style-type: none;
 	list-style-image: none;
 }
-#flyout_menu_2 > ul.menu > li > ul.menu li a {
+#flyout_menu_2 > ul.menu > li > ul.menu > li > a {
 	display: block;
 	color: #134b73;
-	padding: 10px 0 !important;
+	padding: 10px !important;
 	font-size: 16px;
 	float: none;
 	clear: both;
@@ -69,14 +66,6 @@
 #flyout_menu_2 > ul.menu > li > ul.menu > li > a:hover {
 	color: #ffffff;
 	background-color: #999999;
-	background-image: -moz-linear-gradient(top, #c0c0c0, #7f7f7f);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c0c0c0), to(#7f7f7f));
-	background-image: -webkit-linear-gradient(top, #c0c0c0, #7f7f7f);
-	background-image: -o-linear-gradient(top, #c0c0c0, #7f7f7f);
-	background-image: linear-gradient(to bottom, #c0c0c0, #7f7f7f);
-	background-repeat: repeat-x;
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffc0c0c0', endColorstr='#ff7f7f7f', GradientType=0);
-	filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 #flyout_menu_2 > ul.menu li ul.menu li ul.menu {
