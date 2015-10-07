@@ -3,25 +3,26 @@
  */
 
 #flyout_menu_1 {
-    position:relative;
+	position: relative;
 }
 
 /**
  * flyout menu demo #2
  */
+
 #flyout_menu_2 {
-	position:relative;
-    height:auto;
-    display:block;
-    overflow:hidden;
-    clear:both;
-    z-index:1001;
+	position: relative;
+	height: auto;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	z-index: 1001;
 }
 #flyout_menu_2 > ul.menu {
-    display:block;
-	width:100%;
+	display: block;
+	width: 100%;
 	background-color: #cccccc;
-    overflow:hidden;
+	overflow: hidden;
 }
 #flyout_menu_2 > ul.menu > li {
 	padding: 0 !important;
@@ -34,13 +35,12 @@
 }
 #flyout_menu_2 > ul.menu > li > a {
 	display: block;
-	padding:10px !important;
+	padding: 10px !important;
 	float: none;
 	clear: both;
 	text-align: center;
 	text-decoration: none;
 }
-
 #flyout_menu_2 > ul.menu > li > ul.menu {
 	padding-left: 0 !important;
 	margin-bottom: 0 !important;
@@ -60,14 +60,10 @@
 	text-align: center;
 	text-decoration: none;
 }
-#flyout_menu_2 > ul.menu li ul.menu li a:active,
-#flyout_menu_2 > ul.menu li ul.menu li a.current,
-#flyout_menu_2 > ul.menu > li > ul.menu > li > a.active,
-#flyout_menu_2 > ul.menu > li > ul.menu > li > a:hover {
+#flyout_menu_2 > ul.menu li ul.menu li a:active, #flyout_menu_2 > ul.menu li ul.menu li a.current, #flyout_menu_2 > ul.menu > li > ul.menu > li > a.active, #flyout_menu_2 > ul.menu > li > ul.menu > li > a:hover {
 	color: #ffffff;
 	background-color: #999999;
 }
-
 #flyout_menu_2 > ul.menu li ul.menu li ul.menu {
 	position: absolute;
 	display: block;
@@ -106,8 +102,7 @@
 	background-image: url(../images/icon_chevron_right.png);
 	color: #ffffff;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu li a:active,
-#flyout_menu_2 ul.menu li ul.menu li ul.menu li a.current {
+#flyout_menu_2 > ul.menu li ul.menu li ul.menu li a:active, #flyout_menu_2 ul.menu li ul.menu li ul.menu li a.current {
 	background-repeat: no-repeat;
 }
 #flyout_menu_2 > ul.menu li ul.menu li ul.menu li.first a {
@@ -125,6 +120,4 @@
 	}
 }
 @media (max-width:790px) {}
-@media (max-width:500px) {
-
-}
+@media (max-width:500px) {}

@@ -4,9 +4,9 @@
 /* define $ as jQuery just in case */
 (function($) {
 	/* circular carousel - my custom plugin */
-    $.fn.flyout_menu = function() {
+	$.fn.flyout_menu = function() {
 		/* set static vars */
-        var flyout_menu = this;
+		var flyout_menu = this;
 
 		/* close the dropdown / flyout if user clicks outside the submenu */
 		$('body').click(function(e) {
