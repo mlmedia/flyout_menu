@@ -2,16 +2,15 @@
  * jQuery plugin for a flyout menu
  */
 /* define $ as jQuery just in case */
-(function($) {
+(function ($) {
 	/* circular carousel - my custom plugin */
-	$.fn.flyout_menu = function() {
+	$.fn.flyout_menu = function () {
 		/* set static vars */
 		var flyout_menu = this;
 
 		/* close the dropdown / flyout if user clicks outside the submenu */
-		$('body').click(function(e) {
+		$('body').click(function (e) {
 			var main_menu = flyout_menu.find('> ul.menu');
-			console.log(main_menu);
 			var submenus = main_menu.find('li > ul.menu > li > ul.menu');
 			var top_menus = main_menu.find('li > ul.menu');
 			var top_links = top_menus.find('li > a');
@@ -25,10 +24,9 @@
 
 		/* flyout timer - clear on mouse enter / start on mouse leave */
 		var flyout_timer;
-		flyout_menu.on('mouseenter', '> ul.menu > li', function() {
+		flyout_menu.on('mouseenter', '> ul.menu > li', function () {
 			/* clear the timer */
 			clearTimeout(flyout_timer);
-			console.log('test');
 			/* set the vars */
 			var trigger_el = $(this);
 			var parent_menu = $(trigger_el).parents('ul.menu');
@@ -52,8 +50,8 @@
 		});
 
 		/* hide the flyouts on the main (top) menu - with a 3 second delay */
-		$('#nav').on('mouseleave', 'ul.menu > li', function(e) {
-			flyout_timer = setTimeout(function() {
+		$('#nav').on('mouseleave', 'ul.menu > li', function (e) {
+			flyout_timer = setTimeout(function () {
 				hide_flyouts();
 			}, 500);
 		});

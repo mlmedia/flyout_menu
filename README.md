@@ -74,7 +74,7 @@ Since this plugin utilizes jQuery, we must call it before we can initialize the 
 Anywhere under the jQuery ref, add the ref to the plugin.  This can be added in the `<HEAD>` section or anywhere in the `<BODY>` of the document.
 
 ```html
-<script src="js/flyout_menu.js"></script>
+<script src="js/js-plugin-flyout-menu.js"></script>
 <!-- path to your JS folder -->
 ```
 
@@ -89,7 +89,7 @@ Initialize the plugin with the selector of the parent element.
 	/* doc ready */
 	$( function( )
 	{
-		$( '#my_parent_id' ).flyout_menu( );
+		$( '#my_parent_id' ).js-plugin-flyout-menu( );
 	});
 })( jQuery );
 </script>

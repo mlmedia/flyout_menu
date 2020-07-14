@@ -2,37 +2,38 @@
  * flyout menu demo #1
  */
 
-#flyout_menu_1 {
+#js-plugin-flyout-menu-1 {
 	position: relative;
-	clear:both;
-	overflow:hidden;
-	display:block;
+	clear: both;
+	overflow: hidden;
+	display: block;
 }
 
-#flyout_menu_1 ul {
+#js-plugin-flyout-menu-1 ul {
 	list-style-type: none;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 }
 
-#flyout_menu_1 > ul.menu {
+#js-plugin-flyout-menu-1 > ul.menu {
 	display: block;
 	width: 100%;
 	list-style-type: none;
 }
-#flyout_menu_1 > ul.menu > li {
+
+#js-plugin-flyout-menu-1 > ul.menu > li {
 	padding: 0 !important;
 	text-align: center;
 	position: relative;
-	list-style-type:none;
-	float:left;
+	list-style-type: none;
+	float: left;
 }
 
 /**
  * flyout menu demo #2
  */
 
-#flyout_menu_2 {
+#js-plugin-flyout-menu-2 {
 	position: relative;
 	height: auto;
 	display: block;
@@ -40,22 +41,26 @@
 	clear: both;
 	z-index: 1001;
 }
-#flyout_menu_2 > ul.menu {
+
+#js-plugin-flyout-menu-2 > ul.menu {
 	display: block;
 	width: 100%;
 	background-color: #cccccc;
 	overflow: hidden;
 }
-#flyout_menu_2 > ul.menu > li {
+
+#js-plugin-flyout-menu-2 > ul.menu > li {
 	padding: 0 !important;
 	text-align: center;
 	position: relative;
 }
-#flyout_menu_2 > ul.menu > li {
+
+#js-plugin-flyout-menu-2 > ul.menu > li {
 	display: block !important;
 	float: left !important;
 }
-#flyout_menu_2 > ul.menu > li > a {
+
+#js-plugin-flyout-menu-2 > ul.menu > li > a {
 	display: block;
 	padding: 10px !important;
 	float: none;
@@ -63,16 +68,19 @@
 	text-align: center;
 	text-decoration: none;
 }
-#flyout_menu_2 > ul.menu > li > ul.menu {
+
+#js-plugin-flyout-menu-2 > ul.menu > li > ul.menu {
 	padding-left: 0 !important;
 	margin-bottom: 0 !important;
 }
-#flyout_menu_2 > ul.menu > li > ul.menu > li {
+
+#js-plugin-flyout-menu-2 > ul.menu > li > ul.menu > li {
 	margin: 0 !important;
 	list-style-type: none;
 	list-style-image: none;
 }
-#flyout_menu_2 > ul.menu > li > ul.menu > li > a {
+
+#js-plugin-flyout-menu-2 > ul.menu > li > ul.menu > li > a {
 	display: block;
 	color: #134b73;
 	padding: 10px !important;
@@ -82,11 +90,16 @@
 	text-align: center;
 	text-decoration: none;
 }
-#flyout_menu_2 > ul.menu li ul.menu li a:active, #flyout_menu_2 > ul.menu li ul.menu li a.current, #flyout_menu_2 > ul.menu > li > ul.menu > li > a.active, #flyout_menu_2 > ul.menu > li > ul.menu > li > a:hover {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li a:active,
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li a.current,
+#js-plugin-flyout-menu-2 > ul.menu > li > ul.menu > li > a.active,
+#js-plugin-flyout-menu-2 > ul.menu > li > ul.menu > li > a:hover {
 	color: #ffffff;
 	background-color: #999999;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu {
 	position: absolute;
 	display: block;
 	margin-left: 0 !important;
@@ -101,12 +114,14 @@
 	display: none;
 	z-index: 505;
 }
-.lt-ie9 #flyout_menu_2 > ul.menu li ul.menu li ul.menu {
+
+.lt-ie9 #js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu {
 	border: 1px solid #999999;
 	border-top: none !important;
 	margin-left: -1px !important;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu li a {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu li a {
 	text-align: left;
 	background-color: #e0e0e0;
 	background-image: url(../images/icon_blue_chevron_right.png);
@@ -117,17 +132,21 @@
 	padding: 7px 0 7px 36px !important;
 	font-weight: normal;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu li a:hover {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu li a:hover {
 	background-color: #f57f20;
 	border-bottom: 1px solid #f57f20;
 	border-top: 1px solid transparent;
 	background-image: url(../images/icon_chevron_right.png);
 	color: #ffffff;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu li a:active, #flyout_menu_2 ul.menu li ul.menu li ul.menu li a.current {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu li a:active,
+#js-plugin-flyout-menu-2 ul.menu li ul.menu li ul.menu li a.current {
 	background-repeat: no-repeat;
 }
-#flyout_menu_2 > ul.menu li ul.menu li ul.menu li.first a {
+
+#js-plugin-flyout-menu-2 > ul.menu li ul.menu li ul.menu li.first a {
 	border-top: none;
 	-webkit-box-shadow: inset 0 8px 8px -8px #5e5e5e;
 	-moz-box-shadow: inset 0 8px 8px -8px #5e5e5e;
@@ -141,5 +160,7 @@
 		width: 100%;
 	}
 }
+
 @media (max-width:790px) {}
+
 @media (max-width:500px) {}
