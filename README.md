@@ -89,7 +89,7 @@ Initialize the plugin with the selector of the parent element.
 	/* doc ready */
 	$( function( )
 	{
-		$( '#my_parent_id' ).js-plugin-flyout-menu( );
+		$( '#my_parent_id' ).flyout_menu( );
 	});
 })( jQuery );
 </script>
